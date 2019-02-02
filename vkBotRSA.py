@@ -82,12 +82,12 @@ class vkRSA():
                     continue
                 elif ans["failed"] in [2, "2"]:
                     errorText = "Истекло время действия ключа. Некритично"
-                    __firstRequest()
+                    _firstRequest()
                     #time.sleep(5)
                     continue
                 elif ans["failed"] in [3, "3"]:
                     errorText = "Информация утрачена. Некритично"
-                    __firstRequest()
+                    _firstRequest()
                     #time.sleep(5)
                     continue
                 else:
